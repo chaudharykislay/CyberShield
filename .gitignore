@@ -1,0 +1,110 @@
+# ==============================================================================
+# CyberShield — Global Git Ignore Configuration
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# Security, Certificates & Sensitive Keystores
+# ------------------------------------------------------------------------------
+*.cer
+*.crt
+*.pfx
+*.p12
+*.pem
+*.key
+*cacerts*
+avast_root.cer
+custom_cacerts
+
+# Environment variable files (local overrides)
+.env
+.env.local
+.env.*.local
+*.env
+!*.env.example
+
+# ------------------------------------------------------------------------------
+# Local JDK Distributions & Toolchains
+# ------------------------------------------------------------------------------
+jdk-21/
+jdk-*/
+
+# ------------------------------------------------------------------------------
+# Java & Maven Build Artifacts
+# ------------------------------------------------------------------------------
+**/target/
+target/
+*.class
+*.jar
+!**/.mvn/wrapper/maven-wrapper.jar
+*.war
+*.ear
+*.nar
+*.zip
+*.tar.gz
+*.rar
+
+# Eclipse / STS IDE Metadata
+**/.settings/
+**/.classpath
+**/.project
+**/.factorypath
+
+# IntelliJ IDEA Metadata
+**/.idea/
+*.iml
+*.ipr
+*.iws
+
+# Visual Studio Code Metadata
+.vscode/
+**/.vscode/
+
+# NetBeans Metadata
+**/nbproject/private/
+**/build/
+**/nbbuild/
+**/dist/
+**/nbdist/
+
+# ------------------------------------------------------------------------------
+# Node.js & React Frontend Artifacts
+# ------------------------------------------------------------------------------
+**/node_modules/
+node_modules/
+**/dist/
+dist/
+build/
+*.tsbuildinfo
+**/*.tsbuildinfo
+.eslintcache
+.stylelintcache
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ------------------------------------------------------------------------------
+# Operating System Files
+# ------------------------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# ------------------------------------------------------------------------------
+# Database local dumps & locks
+# ------------------------------------------------------------------------------
+*.dump
+*.backup
+*.sqlite
+*.sqlite3
+pgdata/
+cybershield_pgdata/
